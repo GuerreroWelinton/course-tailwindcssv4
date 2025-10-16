@@ -18,10 +18,17 @@
      -->
 
   <!-- Gradientes
-      
+      bg-linear-to-r from-yellow-500 to-green-500
+      bg-linear-to-tl from-yellow-500 to-green-500
+      bg-radial from-yellow-500 to-green-500
+      bg-[linear-gradient(to_right,#3b82f6,#ffffff)]
+
+      bg-gradient-to-r => es más genérico pero hace lo mismo que bg-linear
+
+      Puedo usar generadores de gradientes de tailwind
      -->
   <body
-    class="h-screen flex justify-center items-center bg-[rgba(45,12,62,0.5)] text-red-600/50"
+    class="h-screen flex justify-center items-center bg-linear-to-tl from-yellow-500 to-green-500 text-red-600/50"
   >
     <section class="bg-slate-300">Card</section>
   </body>
