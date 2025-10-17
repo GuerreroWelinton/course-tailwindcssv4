@@ -6,18 +6,42 @@
     <title>Course Tailwind</title>
     <link rel="stylesheet" href="./output.css" />
   </head>
-  <!-- Background and color
+
+  <body
+    class="h-screen flex justify-center items-center bg-gradient-to-tl from-yellow-500 to-green-500 text-red-600/50"
+  >
+    <section class="w-64 h-64 p-5 bg-slate-300">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae est atque
+      eius. Esse recusandae architecto dicta illo fuga deserunt nobis obcaecati
+      autem enim suscipit. Repellat consequuntur neque explicabo nesciunt esse!
+    </section>
+  </body>
+</html>
+
+<!-- Al hacer esto @import 'tailwindcss' tailwind nos da un reset en nuestros estilos -->
+
+<!-- Background and color
    bg-[#fff]
    bg-slate-50 
    -->
 
-  <!-- Opacidad
+<!-- Opacity
       bg-[#989898]/40
       bg-[rgba(45,12,62,0.5)]
       text-black/50
      -->
 
-  <!-- Gradientes
+<!-- Directions
+  t = top
+  r = right
+  b = button
+  l = left
+  x = horizontal
+  y = vertical
+
+-->
+
+<!-- Gradients
       bg-linear-to-r from-yellow-500 to-green-500
       bg-linear-to-tl from-yellow-500 to-green-500
       bg-radial from-yellow-500 to-green-500
@@ -27,9 +51,27 @@
 
       Puedo usar generadores de gradientes de tailwind
      -->
-  <body
-    class="h-screen flex justify-center items-center bg-linear-to-tl from-yellow-500 to-green-500 text-red-600/50"
-  >
-    <section class="bg-slate-300">Card</section>
-  </body>
-</html>
+
+<!-- Width and Height  
+      w-1/h-1 = 1 * 4 = 4px
+      w-2/h-2 = 2 * 4 = 8px
+      ....
+      w-64/h-64 = 64 * 4 = 256px
+
+      Personaliced
+      w-[2px]
+      h-[2px]
+      w-[4rem]
+      h-[4rem]
+      ....
+     -->
+
+<!-- Padding and Margin 
+  p-1
+  p-2 
+  ....
+
+  m-1
+  m-2
+  ....
+ -->
