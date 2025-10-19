@@ -1,5 +1,11 @@
 # Repositorio de Aprendizaje: Tailwind CSS
 
+<p align="center">
+  <a href="https://tailwindcss.com/" target="_blank">
+    <img src="./assets/tailwind-logo.svg" width="200" alt="Tailwind CSS logo">
+  </a>
+</p>
+
 Este repositorio documenta mi proceso de aprendizaje del framework CSS **Tailwind CSS**. El objetivo es empezar con conceptos básicos y progresar hacia la implementación de componentes y proyectos prácticos.
 
 ## 🎯 Objetivo
