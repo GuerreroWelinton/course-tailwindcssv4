@@ -186,3 +186,18 @@ Ejemplo completo:
   Elemento con transición
 </div>
 ```
+
+---
+
+## Sombras (Box Shadow)
+
+- `shadow-2xl` -> Aplica un `box-shadow` extra grande predefinido.
+- `shadow-md`, `shadow-lg`, `shadow-sm` -> Diferentes tamaños de sombra disponibles.
+- `shadow-sky-200` -> Cambia el color de la sombra usando la paleta de colores de Tailwind (ej: `sky-200`).
+- `shadow-[<valor>]` -> Sombra personalizada usando sintaxis CSS estándar.
+
+Ejemplos:
+
+- `shadow-md shadow-black` -> Sombra mediana de color negro.
+- `shadow-lg shadow-blue-500/50` -> Sombra grande azul con 50% de opacidad.
+- `shadow-[0_10px_20px_rgba(0,0,0,0.3)]` -> Sombra completamente personalizada.
