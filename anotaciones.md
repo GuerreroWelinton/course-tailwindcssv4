@@ -129,3 +129,36 @@ El diseño debe ser **mobile-first**, y luego escalar a pantallas más grandes.
 
 Se pueden aplicar estilos a un rango específico, por ejemplo, solo en `md` hasta `lg`:
 `md:max-lg:text-center`
+
+---
+
+## Posicionamiento y z-index
+
+- `relative` -> `position: relative;`
+- `absolute` -> `position: absolute;`
+- `bottom-0` -> `bottom: 0px;`
+- `top-5` -> `top: 1.25rem; /* 20px */`
+- `bottom-[-40px]` -> `bottom: -40px;`
+- `-top-5` -> `top: -1.25rem; /* -20px */`
+- `-bottom-[-40px]` -> `bottom: 40px; /* doble negación: signo invertido */`
+
+- `z-1` -> `z-index: 1;`
+- `z-5` -> `z-index: 5;`
+- `-z-1` -> `z-index: -1;`
+- `-z-5` -> `z-index: -5;`
+
+> Nota: Algunas utilidades como `z-1`/`z-5` pueden no estar disponibles por defecto en la configuración estándar de Tailwind; se pueden añadir en `tailwind.config.js` si las necesitas.
+
+---
+
+## Bordes y border-radius
+
+- `rounded-xs` -> `border-radius: 2px;`
+- `rounded-full` -> crea un círculo si el elemento es cuadrado (`border-radius: 9999px;`)
+- `rounded-[5px]` -> `border-radius: 5px;`
+- `rounded-tr-4xl` -> `border-top-right-radius: 2.5rem; /* 4xl en la escala de Tailwind */`
+
+Consejos:
+
+- Para radios personalizados usa la sintaxis `rounded-[<valor>]` con la unidad deseada.
+- Para radios en esquinas específicas usa `rounded-tr-*`, `rounded-bl-*`, etc.
