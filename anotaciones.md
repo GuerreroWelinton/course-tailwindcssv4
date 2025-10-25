@@ -162,3 +162,27 @@ Consejos:
 
 - Para radios personalizados usa la sintaxis `rounded-[<valor>]` con la unidad deseada.
 - Para radios en esquinas específicas usa `rounded-tr-*`, `rounded-bl-*`, etc.
+
+---
+
+## Hover y Transiciones
+
+### Hover
+
+- `hover:bg-slate-600` -> Aplica `background-color: rgb(71 85 105);` al hacer hover sobre el elemento.
+- Puedes usar el modificador `hover:` con cualquier clase de Tailwind para aplicar estilos al pasar el cursor.
+
+### Transiciones
+
+- `transition-all` -> Aplica `transition-property: all;` con una duración predeterminada de 150ms.
+- `duration-300` -> `transition-duration: 300ms;`
+- `ease-linear` -> `transition-timing-function: linear;`
+- `ease-in`, `ease-out`, `ease-in-out` -> Otras funciones de temporización disponibles.
+
+Ejemplo completo:
+
+```html
+<div class="transition-all duration-300 ease-linear hover:bg-slate-600">
+  Elemento con transición
+</div>
+```
