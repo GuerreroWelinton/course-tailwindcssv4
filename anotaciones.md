@@ -201,3 +201,46 @@ Ejemplos:
 - `shadow-md shadow-black` -> Sombra mediana de color negro.
 - `shadow-lg shadow-blue-500/50` -> Sombra grande azul con 50% de opacidad.
 - `shadow-[0_10px_20px_rgba(0,0,0,0.3)]` -> Sombra completamente personalizada.
+
+---
+
+## Animaciones
+
+### Animaciones Predeterminadas
+
+Tailwind incluye algunas animaciones CSS listas para usar:
+
+- `animate-spin` -> Rotación continua (útil para spinners/cargadores).
+- `animate-pulse` -> Animación de pulso (fade in/out suave).
+- `animate-bounce` -> Rebote vertical.
+
+### Animaciones Personalizadas
+
+Puedes crear tus propias animaciones en el archivo `input.css` usando `@keyframes` y configurarlas en `tailwind.config.js`.
+
+Ejemplo en `input.css`:
+
+```css
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+```
+
+### Uso de @apply
+
+La directiva `@apply` permite crear clases personalizadas que contengan múltiples utilidades de Tailwind:
+
+```css
+.animate-card {
+  @apply transition-all duration-300 ease-in-out hover:scale-110;
+}
+```
+
+Luego puedes usar `.animate-card` directamente en tu HTML.
+
+> **Nota:** No se recomienda trabajar con Tailwind solo en HTML sin ningún framework o librería, ya que la cantidad de clases puede hacer poco legible el código. Considera usar componentes con React, Vue, Svelte, etc., o la directiva `@apply` para agrupar estilos repetitivos.
