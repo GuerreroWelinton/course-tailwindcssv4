@@ -15,5 +15,9 @@
 }
 
 .content-main {
-  @apply grid h-screen bg-gradient-to-tl from-yellow-500 to-green-500 p-4 text-center font-mono text-sm font-bold sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4;
+  @apply grid h-screen bg-gradient-to-tl from-yellow-500 to-green-500 p-4 text-center font-mono text-sm sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4;
+}
+
+.font-custom {
+  @apply text-4xl font-bold text-gray-600;
 }
