@@ -244,3 +244,53 @@ La directiva `@apply` permite crear clases personalizadas que contengan múltipl
 Luego puedes usar `.animate-card` directamente en tu HTML.
 
 > **Nota:** No se recomienda trabajar con Tailwind solo en HTML sin ningún framework o librería, ya que la cantidad de clases puede hacer poco legible el código. Considera usar componentes con React, Vue, Svelte, etc., o la directiva `@apply` para agrupar estilos repetitivos.
+
+---
+
+## Grupos (Group Modifiers)
+
+Los modificadores de grupo permiten aplicar estilos a elementos hijos cuando se interactúa con el elemento padre.
+
+### Uso Básico
+
+Para usar grupos, agrega la clase `group` al elemento padre y luego usa `group-hover:` (u otros modificadores) en los elementos hijos:
+
+```html
+<section class="group bg-white p-4 hover:bg-slate-100">
+  <button class="bg-slate-300 p-2 group-hover:bg-red-200">Enviar</button>
+</section>
+```
+
+Cuando haces hover sobre el `<section>`, el botón cambia su color de fondo.
+
+### Grupos Nombrados
+
+Para evitar efectos no deseados en elementos anidados con múltiples grupos, puedes nombrar los grupos usando la sintaxis `group/{nombre}`:
+
+```html
+<div class="group/card bg-gray-200 p-6 hover:bg-gray-300">
+  <h2>Card principal</h2>
+
+  <button class="bg-blue-500 px-4 py-2 group-hover/card:bg-red-500">
+    Botón principal
+  </button>
+
+  <div class="group/sub-card bg-white p-4 hover:bg-gray-100">
+    <h3>Card secundaria</h3>
+
+    <button class="bg-green-500 px-4 py-2 group-hover/sub-card:bg-purple-500">
+      Botón secundario
+    </button>
+  </div>
+</div>
+```
+
+Esto permite controlar qué grupo afecta a cada elemento hijo, evitando conflictos en estructuras anidadas.
+
+### Otros Modificadores de Grupo
+
+Además de `group-hover:`, puedes usar:
+
+- `group-focus:` -> Cuando el padre tiene foco.
+- `group-active:` -> Cuando el padre está activo.
+- `group-visited:` -> Para enlaces visitados en el grupo.
