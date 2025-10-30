@@ -14,8 +14,56 @@
   <!-- https://www.figma.com/design/T2wq7zMlPLfYMtOjuy3Xql/Modern-Cards--Community-?node-id=1-227&m=dev -->
   <body class="flex h-screen items-center justify-center bg-white font-[Inter]">
     <section
-      class="flex h-[316px] w-[261px] max-w-[261px] min-w-[193px] flex-col items-start justify-between overflow-hidden rounded-[20px] bg-[url(/assets/images/practice-1.jpg)] bg-cover bg-center bg-no-repeat px-2.5 pt-2.5 pb-[15px]"
+      class="relative flex h-[316px] w-[261px] max-w-[261px] min-w-[193px] flex-col items-start justify-between overflow-hidden rounded-[20px] bg-[url(/assets/images/practice-1.jpg)] bg-cover bg-center bg-no-repeat px-2.5 pt-2.5 pb-[15px]"
     >
+      <div
+        class="absolute top-[102px] left-0 rounded-[20px] backdrop-blur-[10px]"
+      >
+        <div class="h-[214px] w-[261px]">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="261"
+            height="214"
+            viewBox="0 0 261 214"
+            fill="none"
+          >
+            <foreignObject x="-20" y="-20" width="301" height="254"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  backdrop-filter: blur(10px);
+                  clip-path: url(#bgblur_0_1_222_clip_path);
+                  height: 100%;
+                  width: 100%;
+                "
+              ></div
+            ></foreignObject>
+            <path
+              data-figma-bg-blur-radius="20"
+              d="M145.673 0C154.239 0 161.854 5.45477 164.61 13.5651L175.591 45.8793C178.347 53.9896 185.961 59.4443 194.527 59.4443H241C252.046 59.4443 261 68.3986 261 79.4443V194C261 205.046 252.046 214 241 214H20C8.95427 214 -3.05176e-05 205.046 -3.05176e-05 194V20C-3.05176e-05 8.9543 8.95427 0 20 0H145.673Z"
+              fill="white"
+              fill-opacity="0.01"
+            />
+            <defs>
+              <clipPath
+                id="bgblur_0_1_222_clip_path"
+                transform="translate(20 20)"
+              >
+                <path
+                  d="M145.673 0C154.239 0 161.854 5.45477 164.61 13.5651L175.591 45.8793C178.347 53.9896 185.961 59.4443 194.527 59.4443H241C252.046 59.4443 261 68.3986 261 79.4443V194C261 205.046 252.046 214 241 214H20C8.95427 214 -3.05176e-05 205.046 -3.05176e-05 194V20C-3.05176e-05 8.9543 8.95427 0 20 0H145.673Z"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+
+        <div
+          class="absolute bottom-[155px] left-[160px] h-[60px] w-[101px] bg-amber-100"
+        >
+          Hola
+        </div>
+      </div>
+
       <article
         class="flex flex-col items-end justify-center gap-2.5 self-stretch"
       >
@@ -108,7 +156,7 @@
           </span>
         </section>
 
-        <section class="flex flex-col items-start gap-[5px] self-stretch">
+        <section class="z-1 flex flex-col items-start gap-[5px] self-stretch">
           <p
             class="self-stretch text-xs leading-normal font-semibold text-white not-italic"
           >
@@ -126,7 +174,7 @@
           </p>
         </section>
 
-        <section class="flex items-start justify-center self-stretch">
+        <section class="z-1 flex items-start justify-center self-stretch">
           <div class="flex flex-1 items-center gap-0.5">
             <div class="flex shrink-0 items-center justify-center">
               <svg
