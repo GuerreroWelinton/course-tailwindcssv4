@@ -14,21 +14,38 @@
   <!-- https://www.figma.com/design/T2wq7zMlPLfYMtOjuy3Xql/Modern-Cards--Community-?node-id=1-227&m=dev -->
   <body class="flex h-screen items-center justify-center bg-white font-[Inter]">
     <section
-      class="flex h-[316px] w-[261px] max-w-[261px] min-w-[193px] flex-col items-start justify-between overflow-hidden rounded-[20px] bg-[url(/assets/images/practice-1.jpg)] bg-cover px-2.5 pt-2.5 pb-[15px]"
+      class="flex h-[316px] w-[261px] max-w-[261px] min-w-[193px] flex-col items-start justify-between overflow-hidden rounded-[20px] bg-[url(/assets/images/practice-1.jpg)] bg-cover bg-center bg-no-repeat px-2.5 pt-2.5 pb-[15px]"
     >
       <article
         class="flex flex-col items-end justify-center gap-2.5 self-stretch"
       >
         <button
           type="button"
-          class="flex h-[34px] w-[34px] items-center justify-center gap-2.5 rounded-[18px] border border-white bg-white px-4 py-2.5 backdrop-blur-[44.5px]"
+          class="flex w-[34px] items-center justify-center gap-2.5 rounded-[18px] bg-white px-4 py-2.5 ring-1 ring-white backdrop-blur-[44.5px] ring-inset"
         >
-          <div class="flex shrink-0 items-center justify-center text-[#4B5320]">
-            <iconify-icon
+          <div class="flex shrink-0 items-center justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
               width="14"
               height="14"
-              icon="mdi-light:eye"
-            ></iconify-icon>
+              viewBox="0 0 14 14"
+              fill="none"
+            >
+              <path
+                d="M9.08833 7.00002C9.08833 8.15502 8.155 9.08835 7 9.08835C5.845 9.08835 4.91166 8.15502 4.91166 7.00002C4.91166 5.84502 5.845 4.91168 7 4.91168C8.155 4.91168 9.08833 5.84502 9.08833 7.00002Z"
+                stroke="#4B5320"
+                stroke-width="0.875"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M7 11.8242C9.05916 11.8242 10.9783 10.6108 12.3142 8.51085C12.8392 7.68835 12.8392 6.30585 12.3142 5.48335C10.9783 3.38335 9.05916 2.17001 7 2.17001C4.94083 2.17001 3.02166 3.38335 1.68583 5.48335C1.16083 6.30585 1.16083 7.68835 1.68583 8.51085C3.02166 10.6108 4.94083 11.8242 7 11.8242Z"
+                stroke="#4B5320"
+                stroke-width="0.875"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </div>
         </button>
       </article>
@@ -40,37 +57,279 @@
           class="flex items-center justify-center gap-[5px] rounded-2xl bg-[#889C21] px-2.5 py-[5px] text-white backdrop-blur-[20px]"
         >
           <div class="flex items-center justify-center">
-            <iconify-icon
-              icon="mdi-light:cloud"
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
               width="12"
               height="12"
-            ></iconify-icon>
+              viewBox="0 0 12 12"
+              fill="none"
+            >
+              <path
+                d="M9.25 6C9.25 4.205 7.795 2.75 6 2.75C4.205 2.75 2.75 4.205 2.75 6"
+                stroke="white"
+                stroke-width="0.75"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M2.495 2.495L2.42999 2.42999M9.505 2.495L9.57001 2.42999L9.505 2.495ZM6 1.03999V1V1.03999ZM1.04001 6H1H1.04001ZM11 6H10.96H11Z"
+                stroke="white"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M2 7.5H10"
+                stroke="white"
+                stroke-width="0.75"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M3 9H9"
+                stroke="white"
+                stroke-width="0.75"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M4.5 10.5H7.5"
+                stroke="white"
+                stroke-width="0.75"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </div>
-          <span class="text-[10px] leading-normal font-normal">Ecotourism</span>
+          <span class="text-[10px] leading-[normal] font-normal not-italic">
+            Ecotourism
+          </span>
         </section>
 
         <section class="flex flex-col items-start gap-[5px] self-stretch">
-          <!-- <p class="text-xs leading-10 font-normal text-white">
-            That's so cool, <br />
-            <span class="text-4xl leading-10 font-bold tracking-normal">
+          <p
+            class="self-stretch text-xs leading-normal font-semibold text-white not-italic"
+          >
+            That's so cool,
+            <span class="block text-[36px] font-bold not-italic">
               Bolívar!
             </span>
-          </p> -->
-          <!-- <p class="leading-10 text-white">
-            <span class="block text-xs">That's so cool,</span>
-            <span class="block text-4xl font-bold">Bolívar!</span>
-          </p> -->
-          <p class="self-stretch leading-10 text-white">
-            <span class="block text-xs font-semibold">That's so cool,</span>
-            <span class="block text-4xl font-bold">Bolívar!</span>
           </p>
 
           <p
-            class="h-[15px] self-stretch overflow-hidden text-[7px] leading-3 font-normal text-ellipsis whitespace-nowrap text-white"
+            class="h-[15px] self-stretch overflow-hidden text-[7px] leading-[10px] font-normal text-ellipsis whitespace-nowrap text-white not-italic"
           >
             Discover the green magic of Bolívar, a natural paradise waiting to
             be explored!
           </p>
+        </section>
+
+        <section class="flex items-start justify-center self-stretch">
+          <div class="flex flex-1 items-center gap-0.5">
+            <div class="flex shrink-0 items-center justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+              >
+                <path
+                  d="M4 1V2.5"
+                  stroke="white"
+                  stroke-width="0.75"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8 1V2.5"
+                  stroke="white"
+                  stroke-width="0.75"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M1.75 4.545H10.25"
+                  stroke="white"
+                  stroke-width="0.75"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10.5 4.25V8.5C10.5 10 9.75 11 8 11H4C2.25 11 1.5 10 1.5 8.5V4.25C1.5 2.75 2.25 1.75 4 1.75H8C9.75 1.75 10.5 2.75 10.5 4.25Z"
+                  stroke="white"
+                  stroke-width="0.75"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M5.99774 6.85001H6.00223"
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M4.14716 6.85001H4.15165"
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M4.14716 8.35001H4.15165"
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+
+            <p
+              class="h-3 flex-1 overflow-hidden text-[7px] leading-2.5 font-normal text-ellipsis whitespace-nowrap text-white not-italic"
+            >
+              12/08/2024 - 12/09/2024
+            </p>
+          </div>
+
+          <div class="flex items-center gap-0.5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="10"
+              height="10"
+              viewBox="0 0 10 10"
+              fill="none"
+            >
+              <path
+                d="M5.72083 1.4625L6.45417 2.92917C6.55417 3.13333 6.82083 3.32917 7.04583 3.36667L8.375 3.5875C9.225 3.72917 9.425 4.34583 8.8125 4.95416L7.77917 5.9875C7.60417 6.1625 7.50833 6.5 7.5625 6.74166L7.85833 8.02083C8.09167 9.03333 7.55417 9.425 6.65833 8.89583L5.4125 8.15833C5.1875 8.025 4.81667 8.025 4.5875 8.15833L3.34167 8.89583C2.45 9.425 1.90833 9.02917 2.14167 8.02083L2.4375 6.74166C2.49167 6.5 2.39583 6.1625 2.22083 5.9875L1.1875 4.95416C0.579167 4.34583 0.775 3.72917 1.625 3.5875L2.95417 3.36667C3.175 3.32917 3.44167 3.13333 3.54167 2.92917L4.275 1.4625C4.675 0.666665 5.325 0.666665 5.72083 1.4625Z"
+                fill="white"
+                stroke="white"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="10"
+              height="10"
+              viewBox="0 0 10 10"
+              fill="none"
+            >
+              <path
+                d="M5.72083 1.4625L6.45417 2.92917C6.55417 3.13333 6.82083 3.32917 7.04583 3.36667L8.375 3.5875C9.225 3.72917 9.425 4.34583 8.8125 4.95416L7.77917 5.9875C7.60417 6.1625 7.50833 6.5 7.5625 6.74166L7.85833 8.02083C8.09167 9.03333 7.55417 9.425 6.65833 8.89583L5.4125 8.15833C5.1875 8.025 4.81667 8.025 4.5875 8.15833L3.34167 8.89583C2.45 9.425 1.90833 9.02917 2.14167 8.02083L2.4375 6.74166C2.49167 6.5 2.39583 6.1625 2.22083 5.9875L1.1875 4.95416C0.579167 4.34583 0.775 3.72917 1.625 3.5875L2.95417 3.36667C3.175 3.32917 3.44167 3.13333 3.54167 2.92917L4.275 1.4625C4.675 0.666665 5.325 0.666665 5.72083 1.4625Z"
+                fill="white"
+                stroke="white"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="10"
+              height="10"
+              viewBox="0 0 10 10"
+              fill="none"
+            >
+              <path
+                d="M5.72083 1.4625L6.45417 2.92917C6.55417 3.13333 6.82083 3.32917 7.04583 3.36667L8.375 3.5875C9.225 3.72917 9.425 4.34583 8.8125 4.95416L7.77917 5.9875C7.60417 6.1625 7.50833 6.5 7.5625 6.74166L7.85833 8.02083C8.09167 9.03333 7.55417 9.425 6.65833 8.89583L5.4125 8.15833C5.1875 8.025 4.81667 8.025 4.5875 8.15833L3.34167 8.89583C2.45 9.425 1.90833 9.02917 2.14167 8.02083L2.4375 6.74166C2.49167 6.5 2.39583 6.1625 2.22083 5.9875L1.1875 4.95416C0.579167 4.34583 0.775 3.72917 1.625 3.5875L2.95417 3.36667C3.175 3.32917 3.44167 3.13333 3.54167 2.92917L4.275 1.4625C4.675 0.666665 5.325 0.666665 5.72083 1.4625Z"
+                fill="white"
+                stroke="white"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="10"
+              height="10"
+              viewBox="0 0 10 10"
+              fill="none"
+            >
+              <path
+                d="M5.72083 1.4625L6.45417 2.92917C6.55417 3.13333 6.82083 3.32917 7.04583 3.36667L8.375 3.5875C9.225 3.72917 9.425 4.34583 8.8125 4.95416L7.77917 5.9875C7.60417 6.1625 7.50833 6.5 7.5625 6.74166L7.85833 8.02083C8.09167 9.03333 7.55417 9.425 6.65833 8.89583L5.4125 8.15833C5.1875 8.025 4.81667 8.025 4.5875 8.15833L3.34167 8.89583C2.45 9.425 1.90833 9.02917 2.14167 8.02083L2.4375 6.74166C2.49167 6.5 2.39583 6.1625 2.22083 5.9875L1.1875 4.95416C0.579167 4.34583 0.775 3.72917 1.625 3.5875L2.95417 3.36667C3.175 3.32917 3.44167 3.13333 3.54167 2.92917L4.275 1.4625C4.675 0.666665 5.325 0.666665 5.72083 1.4625Z"
+                fill="white"
+                stroke="white"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="10"
+              height="10"
+              viewBox="0 0 10 10"
+              fill="none"
+            >
+              <path
+                d="M5.72083 1.4625L6.45417 2.92917C6.55417 3.13333 6.82083 3.32917 7.04583 3.36667L8.375 3.5875C9.225 3.72916 9.425 4.34583 8.8125 4.95417L7.77917 5.9875C7.60417 6.1625 7.50833 6.5 7.5625 6.74166L7.85833 8.02083C8.09167 9.03333 7.55417 9.425 6.65833 8.89583L5.4125 8.15833C5.1875 8.025 4.81667 8.025 4.5875 8.15833L3.34167 8.89583C2.45 9.425 1.90833 9.02917 2.14167 8.02083L2.4375 6.74166C2.49167 6.5 2.39583 6.1625 2.22083 5.9875L1.1875 4.95417C0.579167 4.34583 0.775 3.72916 1.625 3.5875L2.95417 3.36667C3.175 3.32917 3.44167 3.13333 3.54167 2.92917L4.275 1.4625C4.675 0.666665 5.325 0.666665 5.72083 1.4625Z"
+                stroke="white"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </section>
+
+        <section class="flex items-center gap-5 self-stretch">
+          <button
+            type="button"
+            class="flex flex-1 items-center justify-center gap-2.5 rounded-[18px] bg-white px-4 py-2.5 backdrop-blur-[44.5px]"
+          >
+            <div class="flex shrink-0 items-center justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+              >
+                <path
+                  d="M4.95833 8.3125C4.95833 9.4325 5.87999 10.3542 6.99999 10.3542C8.11999 10.3542 9.04166 9.4325 9.04166 8.3125"
+                  stroke="#1E1E1E"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M5.13916 1.16666L3.0275 3.28416"
+                  stroke="#1E1E1E"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.86084 1.16666L10.9725 3.28416"
+                  stroke="#1E1E1E"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M1.16667 4.57917C1.16667 3.50001 1.74417 3.41251 2.46167 3.41251H11.5383C12.2558 3.41251 12.8333 3.50001 12.8333 4.57917C12.8333 5.83334 12.2558 5.74584 11.5383 5.74584H2.46167C1.74417 5.74584 1.16667 5.83334 1.16667 4.57917Z"
+                  stroke="#1E1E1E"
+                />
+                <path
+                  d="M2.04167 5.83334L2.86417 10.8733C3.05084 12.005 3.5 12.8333 5.16834 12.8333H8.68584C10.5 12.8333 10.7683 12.04 10.9783 10.9433L11.9583 5.83334"
+                  stroke="#1E1E1E"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+
+            <span
+              class="text-[10px] leading-[normal] font-semibold text-[#1E1E1E] not-italic"
+            >
+              Buy Ticket
+            </span>
+          </button>
         </section>
       </article>
     </section>
